@@ -23,5 +23,16 @@ public class CustomListTest {
         
     }
 
+    @Test
+    public void testCountCities()
+    {
+        CustomList list = new CustomList();
+        City lahore = new City("lahore", "Punjab");
+        list.addCity(lahore);
+
+        int count = list.countCities();
+        assertEquals(1, count);
+    }
+
 
 }
